@@ -110,6 +110,7 @@ boolean LGATTSUart::onWrite(LGATTWriteRequest &data)
             memcpy(&_value.value, data.value.value + data.offset, data.value.len);
         }
         */
+
         APP_LOG("[LGATTS ino] central[%x:%x:%x:%x:%x:%x] data on peripheral rx[%s][%d]",data.bd.addr[5],data.bd.addr[4],data.bd.addr[3],data.bd.addr[2],data.bd.addr[1],data.bd.addr[0], data.value.value, data.value.len);
     }
     return true;

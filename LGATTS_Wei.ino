@@ -40,7 +40,7 @@ void setup() {
     }
     else
     {
-        //APP_LOG("[LGATTS ino]GATTS begin");
+        APP_LOG("[LGATTS ino]GATTS begin");
         lcd.print("GATTS begin");
         delay(700);
     }
@@ -64,7 +64,7 @@ void loop() {
     {
         APP_LOG("[LGATTS ino] [FAILED] send [%d]", ret);
     }
-    APP_LOG("[LGATTS ino] send [%d][%s]", ret, str);
+    //APP_LOG("[LGATTS ino] send [%d][%s]", ret, str);
   }
   //uart.send(value, uart.getHandle(0), false); // just a notify
 
